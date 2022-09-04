@@ -1,0 +1,218 @@
+@import "./scss/_variables";
+@import "./scss/_mixins";
+@import "./scss/_placeholders";
+
+@media screen and (max-width: 767px){
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    /*stylons le header de la page d'accueil*/
+ /*stylons le header de la page d'accueil*/
+    .header {font-family: 'shrikhand', sans-serif;
+        &__logo{
+           @include display-center;
+           
+             img{
+                height: 2.5rem; 
+            }
+        }
+        &__town{
+            @include display-center;
+            margin-top: 1rem;
+            background-color: $colour-quaternaire;
+            border:0.55rem 0 0.55rem 0 $colour-quaternaire;
+            font-weight:bold;
+            color:rgb(58, 56, 56);
+            box-shadow:0 -0.1rem  0  rgb(204, 199, 199);
+            &--icon{
+            margin-right: 1rem;
+           
+            }
+        }
+}
+ /* stylons le resumé de l'en-tête */
+ .abstract{
+    @include display-center;
+    flex-direction: column;
+    background-color:lighten($colour-primary, 38%);
+    flex-wrap: wrap;
+    padding-top:2rem ;
+    
+   
+    h1{
+        font-size: 1.7rem;  
+        @include display-center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    h2{
+        @include display-center;
+        align-items: center;
+        font-size: 1.5rem; 
+        color:rgb(93, 91, 91);
+        font-weight: lighter;
+        margin-bottom: 3rem;
+        
+    }
+    button{
+        @include display-center;
+        align-items: center;
+        font-size: 1.3rem; 
+        color:#fff;
+        font-weight: lighter;
+        background-color:darken(#af30b4d0, 8%);
+        border-radius: 5rem;
+        border:#FF79DA ;
+        box-shadow: 0em  0em 0.5em 0em lighten($colour-primary, 5%);
+        width: 17rem;
+        height: 4rem;
+        margin-left: 6rem;
+        margin-bottom: 3rem;
+        
+    }
+ }
+ .function{
+   
+    h1{
+       font-size:1.7rem; 
+       padding-left: 4%;
+       margin-top: 10%; 
+       margin-bottom: 5%;
+    }
+    &__search{
+        @include display-center;
+        position: relative;
+        margin: 2rem;
+        :hover{
+            background-color: lighten($colour-primary, 35%);
+            box-shadow: 0em  0em 0.5em 0em darken($colour-fifth, 50%);
+        }
+        
+     input {
+      height: 4.5rem;
+      border-radius: 1rem;
+      padding-left: 5rem;
+      padding-right: 3rem;
+      font-size:1.3rem ;
+      font-weight: bold;
+      background-color:lighten($colour-primary, 38%);
+      box-shadow: 0em  0em 0.5em 0em darken($colour-fifth, 20%);
+      border:#fff;
+     }
+     .fa-mobile-screen-button {
+       font-size: 1.5rem;
+       color:rgb(144, 139, 139);
+      position: absolute;
+      padding-right: 75%;
+       margin-top: 6%;
+     }
+     .fa-mobile-screen-button:hover{
+      color:$colour-primary;
+     }  
+     
+     .fa-1{
+        border-radius: 1rem;
+        background-color: $colour-primary;
+        color: #FFF;
+        padding:0.8rem ;
+        width:0.4rem;
+        border-radius: 50%;
+        height: 0.4rem;
+        font-size: 0.7rem;
+        position: absolute;
+        margin-right: 95%;
+        margin-top: 5%;
+        
+     }
+     .fa-2{
+        @include number;
+     }
+     
+     .fa-list-ul{
+        @include icon;
+     }
+     .fa-list-ul :hover{
+      color:$colour-primary;
+      }
+     .fa-store{
+        @include icon;
+     }
+     .fa-store :hover{
+      color:$colour-primary;
+      }
+     .fa-3{
+        @include number;
+     }
+    }
+
+ }
+ .restaurant{
+    @include display-center;
+    flex-direction: column;
+    background-color:lighten($colour-primary, 38%);
+    
+    h1{
+        font-size:1.7rem; 
+       padding-left: 9%;
+       margin-top: 10%; 
+       margin-bottom: 5%;
+       
+    }
+    &__new{
+        flex-direction: column;
+        border-radius: 1rem;
+        box-shadow:0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+        width: 23rem;     
+        margin-left: 12%;
+        padding: 2px;
+        position: relative;
+        img{
+            width: 23rem;
+           height: 13rem;
+           border-top-left-radius: 1rem;
+           border-top-right-radius: 1rem;
+           justify-content: center;
+           object-fit: cover;  
+        }
+        input{
+         background-color: $colour-tertiaire;
+         color:darken($colour-tertiaire, 50%);
+         width: 4rem;
+         border: $colour-tertiaire;
+         font-weight: bold;
+         height: 1.7rem;
+         position: absolute;
+         margin-left: 75%;
+         margin-top: 5%;
+        }
+        &--A{
+           display: flex;
+           justify-content: space-between;
+           text-decoration: none;
+           h4{
+          color:gray;
+           margin-left: 3%;
+           }
+           span{
+            font-weight: bold;
+            color: black;
+           }
+           .fa-heart{
+            width: 3rem;
+            font-size: 1.7rem;
+            margin-top: 5%;
+            color:rgb(45, 43, 43);  
+           }
+           .fa-heart:hover{
+            background-color: beige;
+           } 
+        }
+        a{
+         text-decoration: none;
+         
+        }
+    }
+ }
+}

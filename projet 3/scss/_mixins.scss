@@ -1,17 +1,4 @@
-@mixin img-ratio {
-    width: 100%;
-        display: block;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        & img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            transform: translate(-50%, -50%);
-        }
-}
+
 @mixin display-center{
     display: flex;
     justify-content: center;
@@ -40,15 +27,53 @@
     position: absolute;
     margin-right: 95%;
     margin-top: 5%;
+    margin-left: none;
+
 }
 @mixin icon{
     font-size: 1.5rem;
        color:rgb(144, 139, 139);
        position: absolute;
-       padding-right: 75%;
+       margin-right: 75%;
        margin-top: 6%;
 }
+@mixin icon-hover{
+    color:$colour-primary;
+    box-shadow: none;
+}
+
+@mixin footer{
+    background-color:rgb(52, 50, 50);
+    margin-top: 15%;
+    padding-bottom: 7%;
+    h2{
+       font-family: Shrikhand;
+       width:5rem;
+       color:white;
+       padding-top: 2rem;
+       font-weight: 400;
+       padding-left: 14%;
+    }
+    ul{
+       color:white;
+       padding-left: 14%;
+    }
+    li{
+       list-style: none;
+       padding-top: 2%;
+    }
+    a{
+       text-decoration: none;
+       color:white
+    }
+    .fa-solid {
+     padding-right: 2%;
+    }
+  }
+  
+ /*faire une mixin du mode deskopt*/
 
 
-     
+
+
      

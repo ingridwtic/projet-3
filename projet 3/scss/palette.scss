@@ -1,0 +1,43 @@
+@import "./_variables";
+@import "./_mixins";
+@import "./_placeholders";
+
+
+@media screen and (max-width: 767px){
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        
+    }
+      /*stylons le header de la page d'accueil*/
+ /*stylons le header de la page d'accueil*/
+ .header {font-family: 'shrikhand', sans-serif;
+    &__logo{
+       @include display-center;
+       
+         img{
+            height: 2.5rem; 
+        }
+    }
+    &__town{
+        @include display-center;
+        margin-top: 1rem;
+        background-color: $colour-quaternaire;
+        border:0.55rem 0 0.55rem 0 $colour-quaternaire;
+        font-weight:bold;
+        color:rgb(58, 56, 56);
+        box-shadow:0 -0.1rem  0  rgb(204, 199, 199);
+        &--icon{
+        margin-right: 1rem;
+       
+        }
+    }
+}
+footer{
+    @include footer;
+}
+}
+
+   
+  
+  

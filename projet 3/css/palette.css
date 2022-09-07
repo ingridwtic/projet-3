@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  /*stylons le header de la page d'accueil*/
+  /*stylons le header de la page d'accueil*/
+  .header {
+    font-family: "shrikhand", sans-serif;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo img {
+    height: 2.5rem;
+  }
+  .header__town {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: rgb(235, 232, 232);
+    border: 0.55rem 0 0.55rem 0 rgb(235, 232, 232);
+    font-weight: bold;
+    color: rgb(58, 56, 56);
+    box-shadow: 0 -0.1rem 0 rgb(204, 199, 199);
+  }
+  .header__town--icon {
+    margin-right: 1rem;
+  }
+  footer {
+    background-color: rgb(52, 50, 50);
+    margin-top: 15%;
+    padding-bottom: 7%;
+  }
+  footer h2 {
+    font-family: Shrikhand;
+    width: 5rem;
+    color: white;
+    padding-top: 2rem;
+    font-weight: 400;
+    padding-left: 14%;
+  }
+  footer ul {
+    color: white;
+    padding-left: 14%;
+  }
+  footer li {
+    list-style: none;
+    padding-top: 2%;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .fa-solid {
+    padding-right: 2%;
+  }
+}
+
+/*# sourceMappingURL=palette.css.map */

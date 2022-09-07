@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/*faire une mixin du mode deskopt*/
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-/*stylons le header de la page d'accueil*/
-/*stylons le header de la page d'accueil*/
-/*stylons le mode mobile*/
 @media screen and (max-width: 767px) {
   body {
     font-family: "Roboto", sans-serif;
@@ -35,9 +27,6 @@ body {
   }
   .header__town--icon {
     margin-right: 1rem;
-  }
-  .header__town p {
-    font-size: 1.2rem;
   }
   /* stylons le resumé de l'en-tête */
   .abstract {
@@ -136,7 +125,6 @@ body {
     position: absolute;
     margin-right: 95%;
     margin-top: 5%;
-    margin-left: none;
   }
   .function__search .fa-2 {
     border-radius: 1rem;
@@ -150,7 +138,6 @@ body {
     position: absolute;
     margin-right: 95%;
     margin-top: 5%;
-    margin-left: none;
   }
   .function__search .fa-list-ul {
     font-size: 1.5rem;
@@ -186,30 +173,31 @@ body {
     position: absolute;
     margin-right: 95%;
     margin-top: 5%;
-    margin-left: none;
   }
   /*stylons les Restaurants*/
   .restaurant {
-    padding-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: #faf7fd;
   }
   .restaurant h1 {
     font-size: 1.7rem;
     padding-left: 9%;
-    padding-top: 10%;
-    margin-bottom: 7%;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
   .restaurant__new {
+    flex-direction: column;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
-    width: 25rem;
+    width: 23rem;
     margin-left: 12%;
     padding: 2px;
     position: relative;
-    margin-bottom: 5%;
   }
   .restaurant__new img {
-    width: 25rem;
+    width: 23rem;
     height: 13rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
@@ -243,27 +231,30 @@ body {
   .restaurant__new--A .fa-regular {
     width: 3rem;
     font-size: 1.7rem;
-    margin-top: 1.5rem;
+    margin-top: 5%;
+    background-clip: padding-box;
     color: rgb(57, 54, 54);
-    margin-left: 12rem;
+    position: absolute;
+    padding-left: 87%;
   }
   .restaurant__new--A .fa-solid {
     width: 3rem;
     font-size: 1.7rem;
+    margin-top: 15%;
+    color: #9356DC;
+    margin-left: 50%;
+    opacity: 1;
     background-clip: text;
     -webkit-background-clip: text;
-    position: absolute;
-    margin-left: 87%;
-    margin-top: 6%;
-    opacity: 0;
+    color: transparent;
   }
   .restaurant__new--A .fa-solid:hover {
     width: 3rem;
     font-size: 1.7rem;
+    margin-top: 5%;
+    margin-left: 50%;
+    color: #9356DC;
     opacity: 1;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .restaurant__new a {
     text-decoration: none;
@@ -297,5 +288,6 @@ body {
     padding-right: 2%;
   }
 }
+/*stylons le mode desktop*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */

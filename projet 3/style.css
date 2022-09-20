@@ -4,8 +4,750 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    color: #fff;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header {
+  font-family: "shrikhand", sans-serif;
+}
+.header__log {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.header__log .fa-arrow-left {
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 1.5rem;
+}
+.header__log img {
+  width: 10rem;
+  margin-right: 8rem;
+  margin-top: 1rem;
+}
+
+.restaurant {
+  margin-top: -5rem;
+  background-color: blue;
+}
+.restaurant__function {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: #faf7fd;
+  width: 100%;
+  padding-left: 3rem;
+}
+.restaurant__function h2 {
+  font-size: 2.1rem;
+  font-weight: 300;
+  font-family: "Shrikhand", sans-serif;
+}
+.restaurant__function .fa-regular {
+  width: 3rem;
+  font-size: 1.7rem;
+  margin-top: 2.3rem;
+  color: rgb(57, 54, 54);
+  margin-left: 4rem;
+}
+.restaurant__function .fa-solid {
+  width: 3rem;
+  font-size: 1.7rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  margin-left: 93rem;
+  margin-top: 2.3rem;
+  justify-content: space-between;
+  opacity: 0;
+}
+.restaurant__function .fa-solid:hover {
+  width: 3rem;
+  font-size: 1.7rem;
+  opacity: 1;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__good {
+  padding-left: 4%;
+}
+.restaurant__good button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: lighter;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 5rem;
+  border: #FF79DA;
+  box-shadow: 0em 0em 0.5em 0em #9a9a9a;
+  width: 17rem;
+  height: 4rem;
+  margin-left: 20%;
+  margin-top: 3rem;
+  transition: transform(500ms);
+}
+.restaurant__good button:hover {
+  transform: scale(1.02);
+  background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
+}
+.restaurant__good h3 {
+  font-weight: 100;
+  border-bottom: solid 0.3rem #99E2D0;
+  width: 3rem;
+  padding-bottom: 0.5rem;
+}
+.restaurant__good--1 {
+  display: flex;
+  margin-bottom: 1rem;
+  animation: appear 3000ms;
+}
+.restaurant__good--1 .menu {
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+  border-radius: 1rem;
+  background-color: #fff;
+  width: 27rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  display: flex;
+}
+.restaurant__good--1 .menu__euro {
+  margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+.restaurant__good--1 .menu__check {
+  margin-right: -3rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #99E2D0;
+  width: 4rem;
+  opacity: 0;
+  transition: all 500ms;
+  display: grid;
+  place-items: center;
+}
+.restaurant__good--1 .menu__check:hover {
+  margin-right: -1rem;
+  opacity: 1;
+}
+.restaurant__good--1 .menu__check p {
+  border-radius: 50%;
+  padding: 0.3rem;
+  background-color: #fff;
+}
+.restaurant__good--1 .menu__check .fa-check {
+  color: #99E2D0;
+  display: grid;
+  place-items: center;
+}
+.restaurant__good--1 .menu__check .fa-check:hover {
+  transform: rotate(-360deg);
+  transition: all 0.3s ease-in-out;
+}
+.restaurant__good--1 .menu h4 {
+  margin-bottom: 0;
+}
+.restaurant__good--1 .menu p {
+  margin-top: 1rem;
+  text-overflow: ellipsis;
+}
+.restaurant__image img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
+
+footer {
+  background-color: rgb(52, 50, 50);
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+footer h2 {
+  font-family: Shrikhand;
+  width: 5rem;
+  color: white;
+  padding-top: 2rem;
+  font-weight: 400;
+  padding-left: 3rem;
+}
+footer ul {
+  color: white;
+  padding-left: 3rem;
+}
+footer li {
+  list-style: none;
+  padding-top: 2%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .fa-solid {
+  padding-right: 2%;
+}
+
+/*pour le mode mobile*/
+@media screen and (max-width: 767px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  @keyframes appear {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+      color: #fff;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .header {
+    font-family: "shrikhand", sans-serif;
+  }
+  .header__log {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header__log .fa-arrow-left {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 1.5rem;
+  }
+  .header__log img {
+    width: 10rem;
+    margin-right: 8rem;
+    margin-top: 1rem;
+  }
+  .restaurant {
+    margin-top: -5rem;
+    background-color: blue;
+  }
+  .restaurant__function {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #faf7fd;
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .restaurant__function h2 {
+    font-size: 2.1rem;
+    font-weight: 300;
+    font-family: "Shrikhand", sans-serif;
+  }
+  .restaurant__function .fa-regular {
+    width: 3rem;
+    font-size: 1.7rem;
+    margin-top: 2.3rem;
+    color: rgb(57, 54, 54);
+    margin-left: 4rem;
+  }
+  .restaurant__function .fa-solid {
+    width: 3rem;
+    font-size: 1.7rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    margin-left: 24.2rem;
+    margin-top: 2.3rem;
+    opacity: 0;
+  }
+  .restaurant__function .fa-solid:hover {
+    width: 3rem;
+    font-size: 1.7rem;
+    opacity: 1;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .restaurant__good {
+    padding-left: 4%;
+  }
+  .restaurant__good button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: lighter;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 5rem;
+    border: #FF79DA;
+    box-shadow: 0em 0em 0.5em 0em #9a9a9a;
+    width: 17rem;
+    height: 4rem;
+    margin-left: 20%;
+    margin-top: 3rem;
+    transition: transform(300ms);
+  }
+  .restaurant__good button:hover {
+    transform: scale(1.02);
+    background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
+  }
+  .restaurant__good h3 {
+    font-weight: 100;
+    border-bottom: solid 0.3rem #99E2D0;
+    width: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  .restaurant__good--1 {
+    display: flex;
+    margin-bottom: 1rem;
+    animation: appear 3000ms;
+  }
+  .restaurant__good--1 .menu {
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+    border-radius: 1rem;
+    background-color: #fff;
+    width: 27rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+  }
+  .restaurant__good--1 .menu__euro {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+  }
+  .restaurant__good--1 .menu__check {
+    margin-right: -3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #99E2D0;
+    width: 4rem;
+    opacity: 0;
+    transition: all 500ms;
+    display: grid;
+    place-items: center;
+  }
+  .restaurant__good--1 .menu__check:hover {
+    margin-right: -1rem;
+    opacity: 1;
+  }
+  .restaurant__good--1 .menu__check p {
+    border-radius: 50%;
+    padding: 0.3rem;
+    background-color: #fff;
+  }
+  .restaurant__good--1 .menu__check .fa-check {
+    color: #99E2D0;
+    display: grid;
+    place-items: center;
+  }
+  .restaurant__good--1 .menu__check .fa-check:hover {
+    transform: rotate(-360deg);
+    transition: all 0.3s ease-in-out;
+  }
+  .restaurant__good--1 .menu h4 {
+    margin-bottom: 0;
+  }
+  .restaurant__good--1 .menu p {
+    margin-top: 1rem;
+    text-overflow: ellipsis;
+  }
+  .restaurant__image img {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+  }
+  footer {
+    background-color: rgb(52, 50, 50);
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  footer h2 {
+    font-family: Shrikhand;
+    width: 5rem;
+    color: white;
+    padding-top: 2rem;
+    font-weight: 400;
+    padding-left: 3rem;
+  }
+  footer ul {
+    color: white;
+    padding-left: 3rem;
+  }
+  footer li {
+    list-style: none;
+    padding-top: 2%;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .fa-solid {
+    padding-right: 2%;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
 /*stylons le header de la page d'accueil*/
 /*stylons le header de la page d'accueil*/
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: linear(1);
+  }
+  100% {
+    transform: linear(0);
+  }
+}
+@keyframes glissement {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+.loading {
+  inset: 0;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  animation: disappear 2000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 2000ms;
+  transform-origin: bottom;
+}
+.loading i {
+  font-size: 3rem;
+  margin: 50%;
+  color: green;
+  animation-duration: 5s;
+  animation-name: glissement;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.header {
+  font-family: "shrikhand", sans-serif;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+.header__logo img {
+  height: 2.5rem;
+}
+.header__town {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  background-color: rgb(235, 232, 232);
+  border: 0.55rem 0 0.55rem 0 rgb(235, 232, 232);
+  font-weight: bold;
+  color: rgb(58, 56, 56);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+}
+.header__town--icon {
+  margin-right: 1rem;
+}
+.header__town p {
+  font-size: 1.2rem;
+}
+
+/* stylons le resumé de l'en-tête */
+.abstract {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #faf7fd;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+.abstract h1 {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.abstract h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(93, 91, 91);
+  font-weight: lighter;
+  margin-bottom: 3rem;
+}
+.abstract button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: lighter;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 5rem;
+  box-shadow: 1px 2px 1px 1px rgb(235, 232, 232);
+  width: 17rem;
+  height: 4rem;
+  margin-left: 40%;
+  margin-bottom: 3rem;
+  transition: transform(300ms);
+}
+
+.abstract button:hover {
+  transform: scale(1.02);
+  background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
+}
+
+/*stylons le fonctionnement*/
+.function {
+  margin-bottom: 7rem;
+}
+.function h1 {
+  font-size: 1.7rem;
+  padding-left: 4%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.function__search {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 2rem;
+}
+.function__search :hover {
+  background-color: #f2eafb;
+  box-shadow: 0em 0em 0.5em 0em #010101;
+}
+.function__search input {
+  height: 4.5rem;
+  border-radius: 1rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #faf7fd;
+  box-shadow: 1px 2px 1px 1px rgb(235, 232, 232);
+  border: #fff;
+}
+.function__search .fa-mobile-screen-button {
+  font-size: 1.5rem;
+  color: rgb(144, 139, 139);
+  position: absolute;
+  margin-right: 20rem;
+  margin-top: 1.5rem;
+}
+.function__search .fa-mobile-screen-button:hover {
+  color: #9356DC;
+  box-shadow: none;
+}
+.function__search .fa-1 {
+  border-radius: 1rem;
+  background-color: #9356DC;
+  color: #FFF;
+  padding: 0.7rem;
+  width: 0.4rem;
+  border-radius: 2rem;
+  height: 0.4rem;
+  font-size: 0.7rem;
+  position: absolute;
+  margin-right: 25.5rem;
+  margin-top: 1.5rem;
+  margin-left: none;
+}
+.function__search .fa-2 {
+  border-radius: 1rem;
+  background-color: #9356DC;
+  color: #FFF;
+  padding: 0.7rem;
+  width: 0.4rem;
+  border-radius: 2rem;
+  height: 0.4rem;
+  font-size: 0.7rem;
+  position: absolute;
+  margin-right: 25.5rem;
+  margin-top: 1.5rem;
+  margin-left: none;
+}
+.function__search .fa-list-ul {
+  font-size: 1.5rem;
+  color: rgb(144, 139, 139);
+  position: absolute;
+  margin-right: 20rem;
+  margin-top: 1.5rem;
+}
+.function__search .fa-list-ul:hover {
+  color: #9356DC;
+  box-shadow: none;
+}
+.function__search .fa-store {
+  font-size: 1.5rem;
+  color: rgb(144, 139, 139);
+  position: absolute;
+  margin-right: 20rem;
+  margin-top: 1.5rem;
+}
+.function__search .fa-store:hover {
+  color: #9356DC;
+  box-shadow: none;
+}
+.function__search .fa-3 {
+  border-radius: 1rem;
+  background-color: #9356DC;
+  color: #FFF;
+  padding: 0.7rem;
+  width: 0.4rem;
+  border-radius: 2rem;
+  height: 0.4rem;
+  font-size: 0.7rem;
+  position: absolute;
+  margin-right: 25.5rem;
+  margin-top: 1.5rem;
+  margin-left: none;
+}
+
+/*stylons les Restaurants*/
+.restaurant {
+  padding-bottom: 2%;
+  background-color: #faf7fd;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  flex-direction: none;
+  align-items: none;
+}
+.restaurant h1 {
+  font-size: 1.7rem;
+  padding-left: 4%;
+  margin-bottom: 7%;
+}
+.restaurant__new {
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+  width: 25rem;
+  margin-left: 12%;
+  padding: 2px;
+  position: relative;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.restaurant__new img {
+  width: 25rem;
+  height: 13rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  justify-content: center;
+  object-fit: cover;
+}
+.restaurant__new input {
+  background-color: #99E2D0;
+  color: #1b6150;
+  width: 4rem;
+  border: #99E2D0;
+  font-weight: bold;
+  height: 1.7rem;
+  position: absolute;
+  margin-left: 75%;
+  margin-top: 5%;
+}
+.restaurant__new--A {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.restaurant__new--A h4 {
+  color: gray;
+  margin-left: 3%;
+}
+.restaurant__new--A span {
+  font-weight: bold;
+  color: black;
+}
+.restaurant__new--A .fa-regular {
+  width: 3rem;
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+  color: rgb(57, 54, 54);
+  margin-left: 12rem;
+}
+.restaurant__new--A .fa-solid {
+  width: 3rem;
+  font-size: 1.7rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  margin-left: 87%;
+  margin-top: 6%;
+  opacity: 0;
+}
+.restaurant__new--A .fa-solid:hover {
+  width: 3rem;
+  font-size: 1.7rem;
+  opacity: 1;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__new a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(52, 50, 50);
+  padding-bottom: 2rem;
+}
+footer h2 {
+  font-family: Shrikhand;
+  font-size: 2rem;
+  color: white;
+  padding-top: 2rem;
+  font-weight: 400;
+  padding-left: 40%;
+}
+footer ul {
+  color: white;
+  padding-left: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer li {
+  list-style: none;
+  padding-top: 0.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .fa-solid {
+  padding-right: 0.5rem;
+}
+
 /*stylons le mode mobile*/
 @media screen and (max-width: 767px) {
   body {
@@ -13,6 +755,340 @@ body {
   }
   /*stylons le header de la page d'accueil*/
   /*stylons le header de la page d'accueil*/
+  .loading {
+    inset: 0;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    animation: disappear 2000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+    transform-origin: bottom;
+  }
+  .loading i {
+    font-size: 3rem;
+    margin: 50%;
+    color: green;
+    animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  .header {
+    font-family: "shrikhand", sans-serif;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo img {
+    height: 2.5rem;
+  }
+  .header__town {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: rgb(235, 232, 232);
+    border: 0.55rem 0 0.55rem 0 rgb(235, 232, 232);
+    font-weight: bold;
+    color: rgb(58, 56, 56);
+    box-shadow: 0 -0.1rem 0 rgb(204, 199, 199);
+  }
+  .header__town--icon {
+    margin-right: 1rem;
+  }
+  .header__town p {
+    font-size: 1.2rem;
+  }
+  /* stylons le resumé de l'en-tête */
+  .abstract {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #faf7fd;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+  }
+  .abstract h1 {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .abstract h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: rgb(93, 91, 91);
+    font-weight: lighter;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+  }
+  .abstract button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: lighter;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 5rem;
+    border: #FF79DA;
+    box-shadow: 0.1em 0.2em 0.5em 0em rgb(187, 182, 182);
+    width: 17rem;
+    height: 4rem;
+    margin-left: 6rem;
+    margin-bottom: 3rem;
+    transition: transform(300ms);
+  }
+  .abstract button:hover {
+    transform: scale(1.02);
+    background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
+  }
+  /*stylons le fonctionnement*/
+  .function {
+    margin-bottom: 10rem;
+  }
+  .function h1 {
+    font-size: 1.7rem;
+    padding-left: 4%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .function__search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 2rem;
+  }
+  .function__search :hover {
+    background-color: #f2eafb;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.1rem #d3cece;
+  }
+  .function__search input {
+    height: 4.5rem;
+    border-radius: 1rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #faf7fd;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.1rem rgb(235, 233, 233);
+    border: #fff;
+  }
+  .function__search .fa-mobile-screen-button {
+    font-size: 1.5rem;
+    color: rgb(144, 139, 139);
+    position: absolute;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
+  }
+  .function__search .fa-mobile-screen-button:hover {
+    color: #9356DC;
+    box-shadow: none;
+  }
+  .function__search .fa-1 {
+    border-radius: 1rem;
+    background-color: #9356DC;
+    color: #FFF;
+    padding: 0.7rem;
+    width: 0.4rem;
+    border-radius: 2rem;
+    height: 0.4rem;
+    font-size: 0.7rem;
+    position: absolute;
+    margin-right: 25.5rem;
+    margin-top: 1.5rem;
+    margin-left: none;
+  }
+  .function__search .fa-2 {
+    border-radius: 1rem;
+    background-color: #9356DC;
+    color: #FFF;
+    padding: 0.7rem;
+    width: 0.4rem;
+    border-radius: 2rem;
+    height: 0.4rem;
+    font-size: 0.7rem;
+    position: absolute;
+    margin-right: 25.5rem;
+    margin-top: 1.5rem;
+    margin-left: none;
+  }
+  .function__search .fa-list-ul {
+    font-size: 1.5rem;
+    color: rgb(144, 139, 139);
+    position: absolute;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
+  }
+  .function__search .fa-list-ul:hover {
+    color: #9356DC;
+    box-shadow: none;
+  }
+  .function__search .fa-store {
+    font-size: 1.5rem;
+    color: rgb(144, 139, 139);
+    position: absolute;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
+  }
+  .function__search .fa-store:hover {
+    color: #9356DC;
+    box-shadow: none;
+  }
+  .function__search .fa-3 {
+    border-radius: 1rem;
+    background-color: #9356DC;
+    color: #FFF;
+    padding: 0.7rem;
+    width: 0.4rem;
+    border-radius: 2rem;
+    height: 0.4rem;
+    font-size: 0.7rem;
+    position: absolute;
+    margin-right: 25.5rem;
+    margin-top: 1.5rem;
+    margin-left: none;
+  }
+  /*stylons les Restaurants*/
+  .restaurant {
+    margin-bottom: -10rem;
+    background-color: #faf7fd;
+    padding-bottom: 40%;
+  }
+  .restaurant h1 {
+    font-size: 1.7rem;
+    padding-left: 9%;
+    padding-top: 10%;
+    margin-bottom: 7%;
+  }
+  .restaurant__new {
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+    width: 25rem;
+    padding: 2px;
+    position: relative;
+    margin-bottom: 5%;
+    margin-left: 8%;
+  }
+  .restaurant__new img {
+    width: 25rem;
+    height: 13rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: center;
+    object-fit: cover;
+  }
+  .restaurant__new input {
+    background-color: #99E2D0;
+    color: #1b6150;
+    width: 4rem;
+    border: #99E2D0;
+    font-weight: bold;
+    height: 1.7rem;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 5%;
+  }
+  .restaurant__new--A {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .restaurant__new--A h4 {
+    color: gray;
+    margin-left: 3%;
+  }
+  .restaurant__new--A span {
+    font-weight: bold;
+    color: black;
+  }
+  .restaurant__new--A .fa-regular {
+    width: 3rem;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    color: rgb(57, 54, 54);
+    margin-left: 12rem;
+  }
+  .restaurant__new--A .fa-solid {
+    width: 3rem;
+    font-size: 1.7rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 6%;
+    opacity: 0;
+  }
+  .restaurant__new--A .fa-solid:hover {
+    width: 3rem;
+    font-size: 1.7rem;
+    opacity: 1;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .restaurant__new a {
+    text-decoration: none;
+  }
+  footer {
+    background-color: rgb(52, 50, 50);
+    padding-bottom: 2rem;
+  }
+  footer h2 {
+    font-family: Shrikhand;
+    width: 5rem;
+    color: white;
+    padding-top: 2rem;
+    font-weight: 400;
+    padding-left: 4rem;
+  }
+  footer ul {
+    color: white;
+    padding-left: 4rem;
+    flex-direction: column;
+  }
+  footer li {
+    list-style: none;
+    padding-top: 0.5rem;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .fa-solid {
+    padding-right: 0.5rem;
+  }
+}
+/*pour les tablettes*/
+@media screen and (min-width: 768px) {
+  .loading {
+    inset: 0;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    animation: disappear 2000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+    transform-origin: bottom;
+  }
+  .loading i {
+    font-size: 3rem;
+    margin: 50%;
+    color: green;
+    animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
   .header {
     font-family: "shrikhand", sans-serif;
   }
@@ -77,7 +1153,7 @@ body {
     box-shadow: 0em 0em 0.5em 0em #9a9a9a;
     width: 17rem;
     height: 4rem;
-    margin-left: 6rem;
+    margin-left: 40%;
     margin-bottom: 3rem;
     transition: transform(300ms);
   }
@@ -89,7 +1165,7 @@ body {
   .function h1 {
     font-size: 1.7rem;
     padding-left: 4%;
-    margin-top: 10%;
+    margin-top: 3%;
     margin-bottom: 5%;
   }
   .function__search {
@@ -117,8 +1193,8 @@ body {
     font-size: 1.5rem;
     color: rgb(144, 139, 139);
     position: absolute;
-    margin-right: 75%;
-    margin-top: 6%;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
   }
   .function__search .fa-mobile-screen-button:hover {
     color: #9356DC;
@@ -128,36 +1204,36 @@ body {
     border-radius: 1rem;
     background-color: #9356DC;
     color: #FFF;
-    padding: 0.8rem;
+    padding: 0.7rem;
     width: 0.4rem;
-    border-radius: 50%;
+    border-radius: 2rem;
     height: 0.4rem;
     font-size: 0.7rem;
     position: absolute;
-    margin-right: 95%;
-    margin-top: 5%;
+    margin-right: 25.5rem;
+    margin-top: 1.5rem;
     margin-left: none;
   }
   .function__search .fa-2 {
     border-radius: 1rem;
     background-color: #9356DC;
     color: #FFF;
-    padding: 0.8rem;
+    padding: 0.7rem;
     width: 0.4rem;
-    border-radius: 50%;
+    border-radius: 2rem;
     height: 0.4rem;
     font-size: 0.7rem;
     position: absolute;
-    margin-right: 95%;
-    margin-top: 5%;
+    margin-right: 25.5rem;
+    margin-top: 1.5rem;
     margin-left: none;
   }
   .function__search .fa-list-ul {
     font-size: 1.5rem;
     color: rgb(144, 139, 139);
     position: absolute;
-    margin-right: 75%;
-    margin-top: 6%;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
   }
   .function__search .fa-list-ul:hover {
     color: #9356DC;
@@ -167,8 +1243,8 @@ body {
     font-size: 1.5rem;
     color: rgb(144, 139, 139);
     position: absolute;
-    margin-right: 75%;
-    margin-top: 6%;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
   }
   .function__search .fa-store:hover {
     color: #9356DC;
@@ -178,25 +1254,27 @@ body {
     border-radius: 1rem;
     background-color: #9356DC;
     color: #FFF;
-    padding: 0.8rem;
+    padding: 0.7rem;
     width: 0.4rem;
-    border-radius: 50%;
+    border-radius: 2rem;
     height: 0.4rem;
     font-size: 0.7rem;
     position: absolute;
-    margin-right: 95%;
-    margin-top: 5%;
+    margin-right: 25.5rem;
+    margin-top: 1.5rem;
     margin-left: none;
   }
   /*stylons les Restaurants*/
   .restaurant {
-    padding-bottom: 4%;
+    padding-bottom: 2%;
     background-color: #faf7fd;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
   }
   .restaurant h1 {
     font-size: 1.7rem;
-    padding-left: 9%;
-    padding-top: 10%;
+    padding-left: 4%;
     margin-bottom: 7%;
   }
   .restaurant__new {
@@ -207,6 +1285,7 @@ body {
     padding: 2px;
     position: relative;
     margin-bottom: 5%;
+    margin-top: 6%;
   }
   .restaurant__new img {
     width: 25rem;
@@ -270,31 +1349,33 @@ body {
   }
   footer {
     background-color: rgb(52, 50, 50);
-    margin-top: 15%;
-    padding-bottom: 7%;
+    padding-bottom: 2rem;
   }
   footer h2 {
     font-family: Shrikhand;
-    width: 5rem;
+    font-size: 2rem;
     color: white;
     padding-top: 2rem;
     font-weight: 400;
-    padding-left: 14%;
+    padding-left: 40%;
   }
   footer ul {
     color: white;
-    padding-left: 14%;
+    padding-left: 4rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   footer li {
     list-style: none;
-    padding-top: 2%;
+    padding-top: 0.5rem;
   }
   footer a {
     text-decoration: none;
     color: white;
   }
   footer .fa-solid {
-    padding-right: 2%;
+    padding-right: 0.5rem;
   }
 }
 

@@ -21,7 +21,7 @@ body {
 .header__log {
   margin-bottom: 1rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .header__log .fa-arrow-left {
   font-size: 1.2rem;
@@ -30,7 +30,7 @@ body {
 }
 .header__log img {
   width: 10rem;
-  margin-right: 8rem;
+  margin-right: 20rem;
   margin-top: 1rem;
 }
 
@@ -70,6 +70,7 @@ body {
   margin-left: 94%;
   margin-top: 2.3rem;
   opacity: 0;
+  cursor: pointer;
 }
 .restaurant__function .fa-solid:hover {
   width: 3rem;
@@ -99,13 +100,14 @@ body {
   margin-left: 20%;
   margin-top: 3rem;
   transition: transform(300ms);
+  cursor: pointer;
 }
 .restaurant__good button:hover {
   transform: scale(1.02);
   background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
 }
 .restaurant__good h3 {
-  font-weight: 400;
+  font-weight: 300;
   border-bottom: solid 0.3rem #99E2D0;
   width: 3rem;
   padding-bottom: 0.5rem;
@@ -114,6 +116,7 @@ body {
   display: flex;
   margin-bottom: 1rem;
   animation: appear 3000ms;
+  cursor: pointer;
 }
 .restaurant__good--1 .menu {
   box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
@@ -166,6 +169,9 @@ body {
   white-space: nowrap;
   width: 15rem;
   cursor: pointer;
+}
+.restaurant__good--1 .menu:hover span {
+  margin-right: 1rem;
 }
 .restaurant__good--1 .menu h4 {
   margin-bottom: 0;
@@ -315,7 +321,7 @@ footer .fa-solid {
     background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
   }
   .restaurant__good h3 {
-    font-weight: 100;
+    font-weight: 300;
     border-bottom: solid 0.3rem #99E2D0;
     width: 3rem;
     padding-bottom: 0.5rem;
@@ -379,6 +385,9 @@ footer .fa-solid {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 15rem;
+  }
+  .restaurant__good--1 .menu:hover span {
+    margin-right: 1rem;
   }
   .restaurant__good--1 .menu h4 {
     margin-bottom: 0;
@@ -516,20 +525,23 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
 }
 .abstract h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: rgb(93, 91, 91);
-  font-weight: lighter;
+  color: rgb(71, 61, 61);
+  font-weight: 300;
   margin-bottom: 3rem;
+  flex-direction: column;
 }
 .abstract button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 1.3rem;
   color: #fff;
   border: #FF79DA;
@@ -539,8 +551,8 @@ body {
   box-shadow: 1px 2px 1px 1px rgb(235, 232, 232);
   width: 17rem;
   height: 4rem;
-  margin-left: 40%;
   margin-bottom: 3rem;
+  margin-top: 3rem;
   transition: transform(300ms);
 }
 
@@ -564,6 +576,7 @@ body {
   justify-content: center;
   position: relative;
   margin: 2rem;
+  flex-wrap: wrap;
 }
 .function__search:hover input {
   background-color: #f2eafb;
@@ -705,7 +718,7 @@ body {
 }
 .restaurant__new input {
   background-color: #99E2D0;
-  color: #1b6150;
+  color: #2c9c81;
   width: 4rem;
   border: #99E2D0;
   font-weight: bold;
@@ -713,16 +726,18 @@ body {
   position: absolute;
   margin-left: 65%;
   margin-top: 5%;
+  border-radius: 0.2rem;
 }
 .restaurant__new--A {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
 }
-.restaurant__new--A h4 {
-  color: gray;
+.restaurant__new--A h3 {
+  color: black;
   margin-left: 3%;
   width: 6rem;
+  font-weight: 400;
 }
 .restaurant__new--A span {
   font-weight: bold;
@@ -824,7 +839,7 @@ footer .fa-solid {
     justify-content: center;
   }
   .header__logo img {
-    height: 2.5rem;
+    height: 2.3rem;
   }
   .header__town {
     display: flex;
@@ -849,7 +864,7 @@ footer .fa-solid {
     flex-direction: column;
     background-color: #faf7fd;
     flex-wrap: wrap;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
   }
   .abstract h1 {
     font-size: 1.6rem;
@@ -857,21 +872,24 @@ footer .fa-solid {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.1rem;
   }
   .abstract h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    color: rgb(93, 91, 91);
-    font-weight: lighter;
-    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    color: rgb(71, 61, 61);
+    font-weight: 400;
+    flex-direction: column;
   }
   .abstract button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    flex-direction: column;
+    font-size: 1.1rem;
     color: #fff;
     font-weight: lighter;
     background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -879,9 +897,345 @@ footer .fa-solid {
     border: #FF79DA;
     box-shadow: 0.1em 0.2em 0.5em 0em rgb(187, 182, 182);
     width: 17rem;
-    height: 4rem;
-    margin-left: 6rem;
-    margin-bottom: 3rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.3rem;
+    transition: transform(500ms);
+  }
+  .abstract button:hover {
+    transform: scale(1.02);
+    background-image: linear-gradient(to bottom, #FF79DA 35%, #9356DC);
+  }
+  /*stylons le fonctionnement*/
+  .function {
+    margin-bottom: 10rem;
+  }
+  .function h1 {
+    font-size: 1.7rem;
+    padding-left: 4%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .function__search {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 2rem;
+    flex-wrap: wrap;
+  }
+  .function__search :hover {
+    background-color: #f2eafb;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.1rem #d3cece;
+  }
+  .function__search input {
+    height: 4.5rem;
+    border-radius: 1rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #faf7fd;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.1rem rgb(235, 233, 233);
+    border: #fff;
+  }
+  .function__search .fa-mobile-screen-button {
+    font-size: 1.5rem;
+    color: rgb(144, 139, 139);
+    position: absolute;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
+  }
+  .function__search .fa-mobile-screen-button:hover {
+    color: #9356DC;
+    box-shadow: none;
+  }
+  .function__search .fa-1 {
+    border-radius: 1rem;
+    background-color: #9356DC;
+    color: #FFF;
+    padding: 0.7rem;
+    width: 0.4rem;
+    border-radius: 2rem;
+    height: 0.4rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    margin-right: 25.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+  .function__search .fa-2 {
+    border-radius: 1rem;
+    background-color: #9356DC;
+    color: #FFF;
+    padding: 0.7rem;
+    width: 0.4rem;
+    border-radius: 2rem;
+    height: 0.4rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    margin-right: 25.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+  .function__search .fa-list-ul {
+    font-size: 1.5rem;
+    color: rgb(144, 139, 139);
+    position: absolute;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
+  }
+  .function__search .fa-list-ul:hover {
+    color: #9356DC;
+    box-shadow: none;
+  }
+  .function__search .fa-store {
+    font-size: 1.5rem;
+    color: rgb(144, 139, 139);
+    position: absolute;
+    margin-right: 20rem;
+    margin-top: 1.5rem;
+  }
+  .function__search .fa-store:hover {
+    color: #9356DC;
+    box-shadow: none;
+  }
+  .function__search .fa-3 {
+    border-radius: 1rem;
+    background-color: #9356DC;
+    color: #FFF;
+    padding: 0.7rem;
+    width: 0.4rem;
+    border-radius: 2rem;
+    height: 0.4rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    margin-right: 25.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+  /*stylons les Restaurants*/
+  .restaurant {
+    margin-bottom: -10rem;
+    background-color: #faf7fd;
+    padding-bottom: 40%;
+    flex-direction: column;
+  }
+  .restaurant h1 {
+    font-size: 1.7rem;
+    padding-left: 9%;
+    padding-top: 3%;
+    margin-bottom: 1%;
+  }
+  .restaurant__new {
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
+    width: 25rem;
+    position: relative;
+    margin-bottom: 5%;
+    margin-left: 8%;
+  }
+  .restaurant__new img {
+    width: 25rem;
+    height: 13rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: center;
+    object-fit: cover;
+  }
+  .restaurant__new input {
+    background-color: #99E2D0;
+    color: #2c9c81;
+    width: 4.7rem;
+    font-size: 0.9rem;
+    border: #99E2D0;
+    font-weight: 600;
+    height: 1.7rem;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 4%;
+    padding: 1% 0 1% 3%;
+    border-radius: 0.2rem;
+  }
+  .restaurant__new--A {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .restaurant__new--A h3 {
+    color: black;
+    margin-left: 3%;
+    width: 15rem;
+    font-weight: 300;
+  }
+  .restaurant__new--A span {
+    font-weight: bold;
+    color: black;
+  }
+  .restaurant__new--A .fa-regular {
+    width: 3rem;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    color: rgb(57, 54, 54);
+    margin-left: 6.6rem;
+  }
+  .restaurant__new--A .fa-solid {
+    width: 3rem;
+    font-size: 1.7rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    margin-left: 87%;
+    margin-top: 6%;
+    opacity: 0;
+  }
+  .restaurant__new--A .fa-solid:hover {
+    width: 3rem;
+    font-size: 1.7rem;
+    opacity: 1;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 2000ms;
+  }
+  .restaurant__new a {
+    text-decoration: none;
+  }
+  footer {
+    background-color: rgb(52, 50, 50);
+    padding-bottom: 2rem;
+  }
+  footer h2 {
+    font-family: Shrikhand;
+    width: 5rem;
+    color: white;
+    padding-top: 2rem;
+    font-weight: 400;
+    padding-left: 4rem;
+  }
+  footer ul {
+    color: white;
+    padding-left: 4rem;
+    flex-direction: column;
+  }
+  footer li {
+    list-style: none;
+    padding-top: 0.5rem;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  footer .fa-solid {
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-device-width: 1024px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  /*stylons le header de la page d'accueil*/
+  /*stylons le header de la page d'accueil*/
+  .loading {
+    inset: 0;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    animation: disappear 2000ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+    transform-origin: bottom;
+  }
+  .loading i {
+    font-size: 3rem;
+    margin: 50%;
+    color: green;
+    animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
+  .header {
+    font-family: "shrikhand", sans-serif;
+  }
+  .header__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .header__logo img {
+    height: 2.3rem;
+  }
+  .header__town {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: rgb(235, 232, 232);
+    border: 0.55rem 0 0.55rem 0 rgb(235, 232, 232);
+    font-weight: bold;
+    color: rgb(58, 56, 56);
+    box-shadow: 0 -0.1rem 0 rgb(204, 199, 199);
+  }
+  .header__town--icon {
+    margin-right: 1rem;
+  }
+  .header__town p {
+    font-size: 1.2rem;
+  }
+  /* stylons le resumé de l'en-tête */
+  .abstract {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #faf7fd;
+    flex-wrap: wrap;
+    padding-top: 1.8rem;
+  }
+  .abstract h1 {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0.1rem;
+  }
+  .abstract h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: rgb(71, 61, 61);
+    font-weight: 400;
+    flex-direction: column;
+  }
+  .abstract button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: lighter;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 5rem;
+    border: #FF79DA;
+    box-shadow: 0.1em 0.2em 0.5em 0em rgb(187, 182, 182);
+    width: 17rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2.3rem;
     transition: transform(500ms);
   }
   .abstract button:hover {
@@ -1008,18 +1362,18 @@ footer .fa-solid {
     margin-bottom: -10rem;
     background-color: #faf7fd;
     padding-bottom: 40%;
+    flex-direction: column;
   }
   .restaurant h1 {
     font-size: 1.7rem;
     padding-left: 9%;
-    padding-top: 10%;
-    margin-bottom: 7%;
+    padding-top: 3%;
+    margin-bottom: 1%;
   }
   .restaurant__new {
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem rgb(235, 232, 232);
     width: 25rem;
-    padding: 2px;
     position: relative;
     margin-bottom: 5%;
     margin-left: 8%;
@@ -1034,14 +1388,17 @@ footer .fa-solid {
   }
   .restaurant__new input {
     background-color: #99E2D0;
-    color: #1b6150;
-    width: 4rem;
+    color: #2c9c81;
+    width: 4.7rem;
+    font-size: 0.9rem;
     border: #99E2D0;
-    font-weight: bold;
+    font-weight: 600;
     height: 1.7rem;
     position: absolute;
     margin-left: 75%;
-    margin-top: 5%;
+    margin-top: 4%;
+    padding: 1% 0 1% 3%;
+    border-radius: 0.2rem;
   }
   .restaurant__new--A {
     display: flex;
@@ -1051,10 +1408,11 @@ footer .fa-solid {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
-  .restaurant__new--A h4 {
-    color: gray;
+  .restaurant__new--A h3 {
+    color: black;
     margin-left: 3%;
-    width: auto;
+    width: 15rem;
+    font-weight: 300;
   }
   .restaurant__new--A span {
     font-weight: bold;
@@ -1065,7 +1423,7 @@ footer .fa-solid {
     font-size: 1.7rem;
     margin-top: 1.5rem;
     color: rgb(57, 54, 54);
-    margin-left: 12rem;
+    margin-left: 6.6rem;
   }
   .restaurant__new--A .fa-solid {
     width: 3rem;

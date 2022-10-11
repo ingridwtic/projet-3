@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-@mixin input{
+@mixin p{
     height: 4.5rem;
     border-radius: 1rem;
     padding-left: 7rem;
@@ -25,8 +25,8 @@
     height: 0.4rem;
     font-size: 1rem;
     margin-top: 1.5rem;
-    position: absolute;
-    margin-right: 25.5rem;
+   position: absolute;
+    margin-right:100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@
     font-size: 1.5rem;
        color:rgb(144, 139, 139);
        position: absolute;
-       margin-right: 20rem;
+       margin-right: 75%;
        margin-top: 1.5rem;
 }
 @mixin icon-hover{
@@ -72,6 +72,9 @@
     .fa-solid {
      padding-right: 2%;
     }
+    .fa-handshake-angle{
+        font-size: 0.8rem;
+       }
   }
   
  /*faire une mixin du mode deskopt*/
